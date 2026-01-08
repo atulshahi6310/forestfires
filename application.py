@@ -1,6 +1,6 @@
 import pickle
-import pandas as pd
 import numpy as np
+import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import Ridge, Lasso, LinearRegression
 from flask import Flask, jsonify, request, render_template
@@ -42,4 +42,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(debug=True ,host='0.0.0.0')
+    app.run(debug=True ,host='0.0.0.0' , port = 5000)
